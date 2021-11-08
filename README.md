@@ -2,10 +2,10 @@
 
 Here are some ideas to get you started:
 
-- 🔭 I’m currently working on React Js.
-- 🌱 I’m currently learning Advance Javascipt and React Js.
-- 👯 I’m looking to collaborate on React Js or vanilla js.
-- 🤔 I’m looking for help with Node Js.
+- 🔭 I’m currently working on MERN Stack.
+- 🌱 I’m currently learning Advance Javascipt and Node Js.
+- 👯 I’m looking to collaborate on MERN Stack.
+- 🤔 I’m looking for help with Machine Learning.
 - 💬 Ask me about Anything.
 - 📫 How to reach me: +923057777911, hamzaig@yahoo.com 
 - 😄 Pronouns: He/Him
