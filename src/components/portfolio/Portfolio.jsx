@@ -10,12 +10,12 @@ import {
 } from "../../data";
 
 const Portfolio = () => {
-  const [active, setActive] = useState("featured");
+  const [active, setActive] = useState("nodejs");
   const [data, setData] = useState([]);
   const list = [
     {
-      id: "featured",
-      title: "Featured"
+      id: "nodejs",
+      title: "Node Js"
     },
     {
       id: "webapp",
@@ -36,7 +36,7 @@ const Portfolio = () => {
   ];
   useEffect(() => {
     switch (active) {
-      case "featured":
+      case "nodejs":
         setData(featuredPortfolio)
         break;
       case "webapp":
@@ -68,7 +68,7 @@ const Portfolio = () => {
         {data.map(d => (
           <div className="item">
             <img className="item-image" src={d.img} alt={d.img} />
-            <h3>{d.title}</h3>
+            <h3><a href={d.link} target="_blank">{d.title}</a></h3>
           </div>
         ))}
 
