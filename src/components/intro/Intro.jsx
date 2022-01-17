@@ -19,7 +19,7 @@ const Intro = () => {
         <div className="wrapper">
           <h2>Hi There, I'm</h2>
           <h1>Hamza Ali Khalid</h1>
-          <h3>Web Developer <span ref={textRef}>Developer</span></h3>
+          <h3>Web Developer <span ref={textRef}></span></h3>
         </div>
         <a href="#portfolio">
           <img src="./assets/down.png" alt="" />
