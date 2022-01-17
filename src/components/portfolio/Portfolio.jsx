@@ -2,11 +2,11 @@ import './portfolio.scss';
 import PortfolioList from "../portfoliolist/PortfolioList";
 import { useState, useEffect } from 'react';
 import {
-  featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
+  nodeJs,
+  reactJs,
+  vanillaJs,
+  python,
+  htmlCss,
 } from "../../data";
 
 const Portfolio = () => {
@@ -18,41 +18,41 @@ const Portfolio = () => {
       title: "Node Js"
     },
     {
-      id: "webapp",
-      title: "Web App"
+      id: "reactJs",
+      title: "React Js"
     },
     {
-      id: "mobileapp",
-      title: "Mobile App"
+      id: "vanillaJs",
+      title: "Vanilla Js"
     },
     {
-      id: "design",
-      title: "Design"
+      id: "python",
+      title: "Python"
     },
     {
-      id: "content",
-      title: "Content"
+      id: "htmlCss",
+      title: "HTML/CSS"
     },
   ];
   useEffect(() => {
     switch (active) {
       case "nodejs":
-        setData(featuredPortfolio)
+        setData(nodeJs)
         break;
-      case "webapp":
-        setData(webPortfolio)
+      case "reactJs":
+        setData(reactJs)
         break;
-      case "mobileapp":
-        setData(mobilePortfolio)
+      case "vanillaJs":
+        setData(vanillaJs)
         break;
-      case "design":
-        setData(designPortfolio)
+      case "python":
+        setData(python)
         break;
-      case "content":
-        setData(contentPortfolio)
+      case "htmlCss":
+        setData(htmlCss)
         break;
       default:
-        setData(featuredPortfolio)
+        setData(nodeJs)
         break;
     }
   }, [active])
