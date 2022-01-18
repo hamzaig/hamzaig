@@ -7,30 +7,36 @@ const Work = () => {
     {
       id: "1",
       icon: "./assets/mobile.png",
-      title: "Web Design",
+      title: "Task Manager Api",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "Add User Remove User Add Task ... source code is public",
       img:
-        "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+        "./assets/node/taskmanagerapi.jpg",
+      link: "https://github.com/hamzaig/taks-manager-api-node",
     },
     {
       id: "2",
       icon: "./assets/globe.png",
-      title: "Mobile Application",
+      title: "React Food",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Food App react",
       img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+        "./assets/react/reactFood.jpg",
+      link: "https://61e59028d5eabe6f05996d41--amazing-joliot-11c0fb.netlify.app/",
+
     },
     {
       id: "3",
-      icon: "./assets/writing.png",
-      title: "Branding",
+      icon: "./assets/globe.png",
+      title: "Forkify",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Forkify is a food recipe Showing Application",
       img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+        "./assets/js/forkify.jpg",
+      link: "https://forkify-hamzaig.netlify.app/",
+
     },
+
   ];
   const handleClick = (direction) => {
     if (direction === "left") {
@@ -52,7 +58,7 @@ const Work = () => {
                   </div>
                   <h1>{d.title}</h1>
                   <p>{d.desc}</p>
-                  <span>Projects</span>
+                  <span><a href={d.link} target="_blank">Projects</a></span>
                 </div>
               </div>
               <div className="right">
